@@ -12,13 +12,16 @@ Credit card fraud is typically detected by analyzing a cardholder's spending pat
   
 ## Architecture
 
-![Credit Card Fraud Detection](images/fraud-detection.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nkeerthi-08/Credit-card-fraud-detection/main/fraud-detection.png" alt="Credit Card Fraud Detection Architecture" width="800">
+</p>
 
 The architecture consists of:
-- A web frontend (index.html) for submitting transaction data
-- A Python backend (app.py) that handles requests and runs predictions
-- A trained SVM classifier (sklearn) performing the fraud/genuine classification
-- A results page (result.html) rendering the prediction, accuracy, and scatter-plot visualizations
+
+- **Frontend:** `index.html` and `result.html` for submitting transaction data and displaying prediction results.
+- **Backend:** `app.py` handles requests, preprocesses the input data, and connects the frontend to the machine learning model.
+- **Machine Learning Model:** An SVM classifier trained on labeled transaction data to classify transactions as genuine or fraudulent.
+- **Evaluation:** Model performance is measured using accuracy metrics and scatter-plot visualizations.
   
 ## Key Components
 
